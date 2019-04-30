@@ -1,0 +1,14 @@
+Thread: es una clase cuya instancia representa un flujo de ejecucion dentro de un programa.
+Pueden cohexstir varios Threads con un mismo recurso compartido.
+
+Runnable: en cambio, es una interfaz que implementa el metodo Run.
+Esta nos permite darle la funcionabilidad de Thread a una clase que no hereda de Thread.
+
+Ciclo de vida: son los diferentes estados por los que puede pasar un thread: creado, en ejecucion, suspendido.
+Cada estado esta representado por metodos:
+
+new() crea un thread.
+start() ejecuta un thread.
+sleep() - wait() pasa un thread 'en ejecución' a 'suspendido'.
+yield() cede su turno para ejecutarse a otro thread.
+join() pone al thread en espera hasta que otro thread termine.
