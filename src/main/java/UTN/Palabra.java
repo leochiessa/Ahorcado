@@ -36,9 +36,14 @@ public class Palabra {
             Random r = new Random();
             int i = r.nextInt(alfabeto.size());
             System.out.println(jugador.getNombre() + ", letra: " + alfabeto.get(i));
-            for (int x = 0; x <= palabra.size() - 1; ) {
-                if (palabra.get(x).equals(alfabeto.get(i))) {
-                    palabra.remove(x);
+            int x = 0;
+            while(x < palabra.size()) {
+                int y = 0;
+                while(y < palabra.size()) {
+                    if (palabra.get(y).equals(alfabeto.get(i))) {
+                        palabra.remove(y);
+                    }
+                    y++;
                 }
                 x++;
             }
